@@ -47,7 +47,7 @@ export default function WeatherFavorites() {
                             <li key={index} className='favorite-city'>
 
                                 <button onClick={() => handleSelectFavorite(city)}>
-                                    {city}
+                                    {city.toUpperCase()}
                                     <button onClick={(event) => handleRemoveFavorite(city, event)}>
                                         -
                                     </button>
