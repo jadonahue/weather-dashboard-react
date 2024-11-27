@@ -1,0 +1,98 @@
+/* 
+Color Palette 
+https://colorhunt.co/palette/f7fbfcd6e6f2b9d7ea769fcd
+*/
+
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  background-color: #F7FBFC;
+  /* background-color: #EEF5FF; */
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #769FCD;
+}
+
+button {
+  margin-left: .5rem;
+  border-radius: 5px;
+  border-color: #769FCD;
+  color: #769FCD;
+  background-color: #F7FBFC;
+}
+
+button:hover {
+  background-color: #769FCD;
+  color: #F7FBFC;
+  border-color: #F7FBFC;
+}
+
+.header h1 {
+  margin-bottom: 35px;
+}
+
+.city-search {
+  margin-bottom: 35px;
+}
+
+.favorite-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.favorite-container h2 {
+  flex: 1 1 100%;
+  text-align: center;
+  margin-bottom: .5rem;
+}
+
+.favorite-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.favorite-city {
+  list-style-type: none;
+  text-align: center;
+}
+
+.weather-forecast-container {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.weather-forecast-card {
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsl(0, 1%, 58%);
+  margin: .5rem;
+  padding: 0 5px;
+  text-align: left;
+  background-color: #D6E6F2;
+}
