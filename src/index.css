@@ -32,7 +32,6 @@ h6 {
 }
 
 button {
-  margin-top: .5rem;
   margin-left: .5rem;
   border-radius: 5px;
   border-color: #769FCD;
@@ -52,6 +51,10 @@ button:hover {
 
 .city-search {
   margin-bottom: 35px;
+}
+
+.city-search input {
+  margin-bottom: .5rem;
 }
 
 .favorite-container {
