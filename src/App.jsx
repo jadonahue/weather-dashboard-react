@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import WeatherSearch from './components/WeatherSearch';
 import WeatherForecast from './components/WeatherForecast';
 import WeatherFavorites from './components/WeatherFavorites';
