@@ -5,6 +5,22 @@ import axios from 'axios';
 export default function WeatherFavorites() {
     const { favorites, setFavorites, weatherData, setWeatherData, searchCity, setSearchCity } = React.useContext(WeatherContext)
 
+    // Load favorites from local storage when component mounts
+    React.useEffect(() => {
+        const savedFavorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+        console.log("Loading from localStorage:", savedFavorites);
+
+        setFavorites(savedFavorites) // Parse and set initial values
+    }, [])
+
+    // Save favorites to localStorage whenever they change
+    React.useEffect(() => {
+        if (favorites.length > 0) {
+            console.log("Saving to localStorage:", favorites);
+            localStorage.setItem('favorites', JSON.stringify(favorites)); // Stringify favorites for storage
+        }
+    }, [favorites]) // Dependency ensures it updates when favorites change
+
     // When city selected to be added to favorites 
     const handleSelectFavorite = async (city) => {
         try {
