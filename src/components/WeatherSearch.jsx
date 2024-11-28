@@ -37,6 +37,7 @@ export default function WeatherSearch() {
         } else {
             setFavorites([...favorites, cityName]); // Keep current favorits and add new city
             setCityName(''); // Set the city input field blank after adding to favorites
+            inputRef.current.focus() // Focuses input field after search
         }
     }
 
